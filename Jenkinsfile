@@ -29,14 +29,15 @@ pipeline{
 				sh 'gradle run'
 			}
 		}
+	}
 		
-		post{
-			success{
-				echo "Build and deployment successful"
-			}
-			failure{
-				echo "Build failed!"
-			}
+	post{
+		success{
+			echo "Build and deployment successful"
+		}
+		failure{
+			echo "Build failed!"
 		}
 	}
+}
 }
