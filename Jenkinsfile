@@ -14,7 +14,7 @@ pipeline{
 		
 		stage('Build'){
 			steps{
-				sh 'gradle build --stacktrace --info'
+				sh './gradlew clean build --stacktrace --info'
 			}
 		}
 		
