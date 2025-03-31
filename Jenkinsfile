@@ -20,13 +20,13 @@ pipeline{
 		
 		stage('Test'){
 			steps{
-				sh 'gradle test'
+				sh './gradlew test'
 			}
 		}
 		
 		stage('Run Application'){
 			steps{
-				sh 'gradle run'
+				sh './gradlew run'
 			}
 		}
 	}
